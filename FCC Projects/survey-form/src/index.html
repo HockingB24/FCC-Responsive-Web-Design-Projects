@@ -1,0 +1,71 @@
+<DOCTYPE! html>
+  <html>
+    <head>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&family=Otomanopee+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      <div id="header">
+        <h1 id = "title">Pet Survey</h1>
+        <p id="description"><em>This is a survey about dogs and cats. Enjoy!</em></p>
+      </div>
+      <div>
+        <form id="survey-form">
+          <div class="survey-text-container">
+            <label for="name" id="name-label">Name</label>
+            <input id="name" type="text" placeholder="Enter your name" name="name" class="input-boxes" required></input>
+          
+            <label for="email" id="email-label">Email</label>
+            <input id="email" type="email" placeholder="Enter your email" name="email" class="input-boxes" required></input>
+          
+            <label for="age" id="number-label">Age</label>
+            <input id="number" type="number" class="input-boxes" min="1" max="100" placeholder="Enter your age" name="age">
+          
+          <label for="dropdown">How would you rate this survey?
+            <select name="dropdown" class="input-boxes" id="dropdown" placeholder="Select an Option Below">
+             <option value="awful">Awful</option>
+             <option value="good-enough">Good Enough</option>
+             <option value="wonderful">Wonderful</option>
+            </select>
+          </label>
+            
+          <div>
+            <p class="labels">What is your favorite animal?</p>
+              <div>
+                <label for="pet"><input type="radio" id="cat" name="pet" value="cat">Cat</label>
+              </div>
+              <div>
+                <label for="pet"><input type="radio" id="dog" name="pet" value="dog">Dog</label>
+              </div>
+          </div>
+          
+          <div>
+            <p class="labels">What pet(s) do you own?</p>
+            <div>
+              <input type="checkbox" id="cat" name="cat" value="Cat">
+              <label for="cat">Cat</label>
+            </div>
+            
+            <div>
+              <input type="checkbox" id="dog" name="dog" value="Dog">
+              <label for="dog">Dog</label>
+            </div>
+          </div>
+          
+          <div>
+            <p class="labels">Tell us about your experiences with dogs and cats:</p>
+           <textarea id="extra-info" name="extra-info" rows="6" columns="30">Write your experiences here.</textarea>
+          </div>
+          <div>
+            <input type="submit" value="Submit" id="submit">
+          </div>   
+        
+          </div>
+          <div id="footer">
+            <footer> Copyright © 2021 Brandon Hocking. All Rights Reserved</footer>
+          </div>
+        </form>    
+
+    </body> 
+  </html>
