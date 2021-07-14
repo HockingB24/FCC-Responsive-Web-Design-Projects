@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+
+html, body, section, h1, h2, ul, li, nav{
+  margin: 0;
+  padding: 0;
+  
+}
+html {
+  font-family: 'Josefin Sans', sans-serif;
+  scroll-behavior: smooth;
+}
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 25px;
+}
+
+
+#navbar {
+  overflow: hidden;
+  height: 50px;
+  position: fixed;
+  width: 100%;
+  background-color: #DD2A22;
+}
+
+li {
+  list-style: none;
+}
+li a {
+  float: left;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  padding: 17px 15px 17px 15px;
+}
+li a:hover {
+  background-color: #961D17;
+}
+#nav-right {
+  float: right;
+}
+
+
+#welcome-heading {
+  text-align: center;
+  color: #AACCFF;
+}
+#welcome-h1 {
+  padding: 100px 0 0px 0;
+}
+#welcome-desc {
+  width: 80%;
+  margin: 100px auto;
+  padding: 30px;
+  box-shadow: 0 0 2rem #784949;
+  border-radius: 50px;
+  background-color: #2D2D4A;
+  font-size: 20px;
+}
+#welcome-section{
+  height: 100vh;
+  width:100%;
+  margin: auto;
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(73,73,120,1) 99%);
+}
+#projects {
+ background-color: #313639;
+  padding: 0 0 100px 0;
+}
+#project-h1 {
+  color: #c5c8c8;
+  padding: 60px;
+  text-align: center;
+}
+.project-header{
+  padding: 30px;
+
+  color: black;
+}
+#project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  width: 100%;
+  margin: 0 auto;
+  gap: 30px;
+  text-align: center;
+}
+.project-tile {
+  display: grid;
+  background-color: #c5c8c8;
+  box-shadow: 0 0 0.5em black;
+  border: 3px solid black;
+
+}
+.grid-image {
+  object-fit: cover;
+  width: 100%;
+}
+#github {
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(73,73,120,1) 99%);
+  height: 400px;
+}
+
+#contact-heading {
+  text-align: center;
+  color: #AACCFF;
+  padding: 100px 0 0 0;
+}
+
+.link {
+  display: block;
+  text-align: center;
+  padding: 30px;
+  font-size: 25px;
+  background-color: #AACCFF;
+  width: 30%;
+  margin: 50px auto 50px auto;
+  border-radius: 50px;
+  color: black;
+  border: 2px solid black;
+}
+.link:hover {
+  box-shadow: 0 0 1em grey;
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: #3D3D65;
+}
+
+@media only screen and (max-width: 600px) {
+ 
+  #welcome-desc {
+    font-size: 15px;
+    margin: auto;
+  }
+  #project-grid {
+    width: 70%;
+  }
+  #github {
+    height: 100vh;
+  }
+}
+@media only screen and (max-height: 300px){
+  #welcome-desc {
+    padding: 10px;
+    margin: 20px auto;
+  }
+}
+
+@media only screen and (min-height: 700px){
+  #welcome-desc {
+    padding: 100px 60px 100px 60px;
+    width: 60%;
+    font-size: 25px;
+  }
+}
